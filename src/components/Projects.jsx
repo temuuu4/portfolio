@@ -22,7 +22,7 @@ function Projects() {
               GitHub
             </a>
             <a
-              href="#"
+              href="https://begena-app.vercel.app/"
               className="btn btn-outline"
             >
               Live Demo
@@ -66,7 +66,7 @@ function Projects() {
               GitHub
             </a>
             <a
-              href="#"
+              href="https://begena-app-w9pk.vercel.app"
               className="btn btn-outline"
             >
               Live Demo
