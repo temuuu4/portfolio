@@ -1,15 +1,43 @@
+import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+
 function Contact() {
   return (
     <section id="contact" className="section">
-      <h2>Contact</h2>
+      <h2>Contact Me</h2>
 
-      <p>If you’d like to connect or collaborate, feel free to reach out.</p>
+      <div className="contact-buttons">
 
-      <ul className="contact-list">
-        <li>Email: <a href="mailto:temesegen.mekonnen@astu.edu.et">temesegen.mekonnen@astu.edu.et</a></li>
-        <li>GitHub: <a href="https://github.com/emuuu7" target="_blank">github.com/emuuu7</a></li>
-        <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
-      </ul>
+        <motion.a
+          href="https://github.com/temuuu4"
+          target="_blank"
+          className="contact-btn"
+          whileHover={{ y: -5 }}
+        >
+          <FaGithub />
+          GitHub
+        </motion.a>
+
+        <motion.a
+          href="https://linkedin.com/in/temesegen-mekonnen-14b5ba3ab"
+          target="_blank"
+          className="contact-btn"
+          whileHover={{ y: -5 }}
+        >
+          <FaLinkedin />
+          LinkedIn
+        </motion.a>
+
+        <motion.a
+          href="mailto:temesegen.mekonnen@astu.edu.et"
+          className="contact-btn"
+          whileHover={{ y: -5 }}
+        >
+          <FaEnvelope />
+          Email
+        </motion.a>
+
+      </div>
     </section>
   );
 }
